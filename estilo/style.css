@@ -68,24 +68,41 @@ header > p {
     padding-bottom: 35px;
 
 }
-nav {
-    background-color: var(--cor05);
+span#burguer {
+    background-color: rgb(48, 48, 48);
+    display: block;
+    color: white;
+    text-align: center;
     padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
-    text-align: left;
+  }
+ 
+span#burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+menu {
+    display: none;
 }
-nav > a {
-    color: var(--cor01);
+
+menu > ul {
+    list-style-type: none;
+ }
+
+ menu > ul > li > a {
+    display: block;
     padding: 10px;
-    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-    
-}
-nav > a:hover {
-    background-color: var(--cor03);
-    color: var(--cor05);
-}
+    background-color: rgb(87, 87, 87);
+    color: white;
+    text-align: center;
+    border: 2px solid gray;
+ } 
+
+ menu > ul > li > a:hover {
+    background-color: gray;
+ }
+
 main {
     background-color:white;
     min-width: 300px;
